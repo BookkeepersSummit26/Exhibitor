@@ -872,86 +872,24 @@ footer p{color:rgba(255,255,255,.32);font-size:12px;}
           </div>
         </div>
 
-        <div class="fcard">
-          <div class="fhdr">
-            <h3>Exhibitor Profile Form</h3>
-            <p>Bookkeepers Summit 2026 · QEII Centre, London · 16–17 November</p>
+        <div style="flex:1;min-width:0;">
+          <div style="background:var(--navy);padding:20px 26px;border-radius:var(--rlg) var(--rlg) 0 0;border-bottom:3px solid var(--teal);">
+            <h3 style="color:#fff;font-size:17px;font-weight:800;font-family:Montserrat,sans-serif;margin-bottom:3px;">Exhibitor Registration Form</h3>
+            <p style="color:rgba(255,255,255,.5);font-size:13px;">Bookkeepers Summit 2026 · QEII Centre, London · 16–17 November</p>
           </div>
-          <div class="fbody">
-            <div class="ms-note">
-              <span style="font-size:17px;flex-shrink:0;">📧</span>
-              <span>Backed by <strong>Microsoft Forms</strong> — your submission is sent securely to the organising team and logged in your exhibitor record.</span>
-            </div>
-
-            <div class="fsec">🏢 Company Details</div>
-            <div class="frow">
-              <div class="fg"><label class="flbl">Company Name <span class="r">*</span></label><input type="text" class="finp" id="f-co" placeholder="Acme Accounting Software Ltd"></div>
-              <div class="fg"><label class="flbl">Website</label><input type="url" class="finp" placeholder="https://www.yourcompany.co.uk"></div>
-            </div>
-            <div class="fg">
-              <label class="flbl">Programme &amp; App Description <span class="r">*</span></label>
-              <textarea class="finp" id="f-desc" oninput="wc(this,'wcc',100)" placeholder="Describe your company and what you'll be showcasing (100 words max). This appears in the printed programme and Summit app…" style="min-height:106px;"></textarea>
-              <div class="wc" id="wcc">0 / 100 words</div>
-            </div>
-            <div class="frow">
-              <div class="fg"><label class="flbl">Twitter / X Handle</label><input type="text" class="finp" placeholder="@yourcompany"></div>
-              <div class="fg"><label class="flbl">LinkedIn Page URL</label><input type="url" class="finp" placeholder="https://linkedin.com/company/…"></div>
-            </div>
-
-            <div class="fsec">👤 Primary Contact</div>
-            <div class="frow">
-              <div class="fg"><label class="flbl">First Name <span class="r">*</span></label><input type="text" class="finp" id="f-fn" placeholder="Jane"></div>
-              <div class="fg"><label class="flbl">Last Name <span class="r">*</span></label><input type="text" class="finp" id="f-ln" placeholder="Smith"></div>
-            </div>
-            <div class="frow">
-              <div class="fg"><label class="flbl">Job Title <span class="r">*</span></label><input type="text" class="finp" id="f-jt" placeholder="Marketing Director"></div>
-              <div class="fg"><label class="flbl">Phone <span class="r">*</span></label><input type="tel" class="finp" id="f-ph" placeholder="+44 7700 900000"></div>
-            </div>
-            <div class="fg"><label class="flbl">Email Address <span class="r">*</span></label><input type="email" class="finp" id="f-em" placeholder="jane@yourcompany.co.uk"></div>
-
-            <div class="fsec">🪧 Stand &amp; Passes</div>
-            <div class="frow">
-              <div class="fg"><label class="flbl">Stand Number <span class="r">*</span></label><input type="text" class="finp" id="f-sn" placeholder="e.g. Stand 14"></div>
-              <div class="fg"><label class="flbl">Number of Staff Passes</label><select class="fsel"><option>— Select —</option><option>2 passes (Bronze)</option><option>3 passes (Silver)</option><option>4 passes (Gold)</option><option>5 passes (Platinum)</option><option>10 passes (Diamond)</option></select></div>
-            </div>
-            <div class="fg">
-              <label class="flbl">Staff Names &amp; Dietary Requirements</label>
-              <textarea class="finp" placeholder="List each badge holder name and dietary req, e.g. Jane Smith — Vegetarian · Tom Jones — No allergies" style="min-height:74px;"></textarea>
-              <div class="fhint">Updatable up to 30 October 2026.</div>
-            </div>
-            <div class="fg"><label class="flbl">Fever Pitch Speaker Name</label><input type="text" class="finp" placeholder="Name of person delivering your 60-second pitch on stage"></div>
-            <div class="fg"><label class="flbl">Special Stand Requirements</label><textarea class="finp" placeholder="Extra power sockets, AV equipment, accessibility needs, etc." style="min-height:66px;"></textarea></div>
-
-            <div class="fsec">📁 File Uploads</div>
-            <div class="fg">
-              <label class="flbl">Company Logo <span class="r">*</span></label>
-              <div class="upz" id="lz" onclick="document.getElementById('li').click()" ondragover="dov(event,'lz')" ondragleave="dlv('lz')" ondrop="ddp(event,'lz','ll','lf')">
-                <span class="upz-ico">🖼️</span>
-                <p><strong>Upload your logo</strong> — click or drag &amp; drop</p>
-                <p class="upz-hint">EPS, AI, SVG, or PNG at 300dpi min · Transparent background preferred</p>
-                <span class="gdrive">🔒 Saved to Google Drive</span>
-              </div>
-              <div class="flist" id="ll"></div>
-              <input type="file" id="li" style="display:none" accept=".eps,.ai,.svg,.png,.pdf" onchange="af(this.files,'ll','lf')">
-            </div>
-            <div class="fg">
-              <label class="flbl">Stand Artwork &amp; Supporting Documents</label>
-              <div class="upz" id="dz" onclick="document.getElementById('di').click()" ondragover="dov(event,'dz')" ondragleave="dlv('dz')" ondrop="ddp(event,'dz','dl','df')">
-                <span class="upz-ico">☁️</span>
-                <p><strong>Upload artwork, insurance, risk assessments or other files</strong></p>
-                <p class="upz-hint">PDF, AI, INDD, JPG, PNG, ZIP · Max 50MB per file · Multiple files accepted</p>
-                <span class="gdrive">🔒 Saved to Google Drive</span>
-              </div>
-              <div class="flist" id="dl"></div>
-              <input type="file" id="di" style="display:none" multiple accept=".pdf,.ai,.indd,.jpg,.jpeg,.png,.zip,.eps,.doc,.docx" onchange="af(this.files,'dl','df')">
-            </div>
-
-            <div class="fsec" style="margin-top:22px;">✅ Confirmation</div>
-            <div class="fcheck"><input type="checkbox" id="tc"><label for="tc">I confirm the details are accurate and I have read the <a href="#">Exhibitor Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>. <span class="r">*</span></label></div>
-            <div class="fcheck"><input type="checkbox" id="upd"><label for="upd">I'd like to receive updates about future Bookkeepers Summit events and exhibitor opportunities from ICB.</label></div>
-
-            <button class="btn btn-red btn-full" style="padding:14px;font-size:15px;margin-top:4px;" onclick="sub()">Submit Profile &amp; Files →</button>
-            <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:9px;">You'll receive a confirmation email within 1 working day. Files will appear in your Google Drive folder.</p>
+          <div style="background:var(--teal-pale);padding:12px 20px;border:1px solid rgba(102,168,162,.25);border-top:none;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--teal-mid);">
+            <span style="font-size:18px;">&#x1F4C1;</span>
+            <span>File uploads go directly to our <strong style="color:var(--navy);">Google Drive</strong> exhibitor folder. You'll receive a confirmation email after submitting.</span>
+          </div>
+          <div style="border:1px solid var(--border);border-top:none;border-radius:0 0 var(--rlg) var(--rlg);overflow:hidden;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLAXwf-VaiYghrM-n7htAK1OC-9BJiCP-ORImblsYNDifPJw/viewform?embedded=true"
+              width="100%"
+              height="1200"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="display:block;"
+            >Loading form…</iframe>
           </div>
         </div>
       </div>
