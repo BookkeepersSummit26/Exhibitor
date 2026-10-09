@@ -1632,7 +1632,7 @@ const PORTAL_PASSWORD = 'Summit2026';
 const SESSION_KEY = 'bs2026_auth';
 
 function checkPw() {
-  const val = document.getElementById('pw-input').value;
+  const val = document.getElementById('pw-input').value.trim();
   const err = document.getElementById('login-error');
   if (val === PORTAL_PASSWORD) {
     sessionStorage.setItem(SESSION_KEY, 'true');
